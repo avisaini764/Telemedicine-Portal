@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Telemedicine Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Simple Telemedicine</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#appointment">Book Appointment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Our Service</h2>
+    <p>We offer remote healthcare services to patients with qualified doctors available for online consultations.</p>
+  </section>
+
+  <section id="appointment">
+    <h2>Book an Appointment</h2>
+    <form id="appointment-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="date">Preferred Appointment Date:</label>
+      <input type="date" id="date" required>
+      
+      <label for="doctor">Choose Doctor:</label>
+      <select id="doctor" required>
+        <option value="dr_smith">Dr. John Smith (Cardiologist)</option>
+        <option value="dr_jones">Dr. Emily Jones (Pediatrician)</option>
+      </select>
+      
+      <button type="submit">Book Appointment</button>
+    </form>
+    <p id="confirmation" style="display:none;">Your appointment is confirmed! We will send you a reminder email.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="contact-name">Your Name:</label>
+      <input type="text" id="contact-name" required>
+      
+      <label for="contact-message">Message:</label>
+      <textarea id="contact-message" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Simple Telemedicine Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
